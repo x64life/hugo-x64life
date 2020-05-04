@@ -3,7 +3,7 @@
 # And see https://gohugo.io/getting-started/configuration/ .
 
 baseURL = "http://x64.life"
-title = "x64.life"
+title = "X64·Life"
 enableRobotsTXT = true
 enableEmoji = true
 theme = "jane"
