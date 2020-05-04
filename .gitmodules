@@ -1,0 +1,4 @@
+[submodule "public"]
+	path = public
+	url = https://github.com/x64life/x64life.github.io.git
+	branch = master
