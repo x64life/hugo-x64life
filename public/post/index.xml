@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on x64.life</title>
+    <link>http://x64.life/post/</link>
+    <description>Recent content in Posts on x64.life</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 04 May 2020 03:25:56 +0800</lastBuildDate>
+    
+	<atom:link href="http://x64.life/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>第一篇文章</title>
+      <link>http://x64.life/post/first-post/</link>
+      <pubDate>Mon, 04 May 2020 03:25:56 +0800</pubDate>
+      
+      <guid>http://x64.life/post/first-post/</guid>
+      <description>&lt;p&gt;第一篇文章，说到哪里是哪里。&lt;/p&gt;
+&lt;h2 id=&#34;我是谁&#34;&gt;我是谁？&lt;/h2&gt;
+&lt;p&gt;网名：桀木 | 职业：汽车工程师 | 业余爱好：IT技术&lt;br&gt;
+更多信息参见 &lt;a href=&#34;http://x64.life/about/&#34;&gt;关于&lt;/a&gt; 页面&lt;/p&gt;
+&lt;h2 id=&#34;为什么写博客&#34;&gt;为什么写博客？&lt;/h2&gt;
+&lt;p&gt;学习 | 记录 | 分享&lt;br&gt;
+年纪大了，有些事情靠脑子记不住了&lt;/p&gt;
+&lt;h2 id=&#34;下面没有了&#34;&gt;下面没有了&lt;/h2&gt;
+&lt;p&gt;囧囧囧。。。未完待续&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
