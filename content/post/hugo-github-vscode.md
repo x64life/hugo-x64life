@@ -27,12 +27,12 @@ mathjax: false
 #### 1. Hugo安装  
 通过SSH或者Unraid里的VNC Remote登录Debian 10  
 下载并安装Go语言和最新版的Hugo：  
-```bash
-apt-get install golang
-wget https://github.com/gohugoio/hugo/releases/download/v0.69.2/hugo_0.69.2_Linux-64bit.deb
-dpkg -i hugo_0.69.2_Linux-64bit.deb
-hugo version
-```
+
+    apt-get install golang
+    wget https://github.com/gohugoio/hugo/releases/download/v0.69.2/hugo_0.69.2_Linux-64bit.deb
+    dpkg -i hugo_0.69.2_Linux-64bit.deb
+    hugo version
+
 如果正确返回版本信息，说明已经安装成功
 
 具体hugo建站流程参见官网教程[Quick Start](https://gohugo.io/getting-started/quick-start/)
@@ -41,16 +41,18 @@ hugo version
 官方教程：
 * 在Github中创建一个代码仓库\<YOUR-PROJECT\>用于存放Hugo的相关文件；
 * 在Github中创建\<USERNAME\>.github.io代码仓库，用于存放网页文件；
-* git clone \<YOUR-PROJECT-URL\> && cd \<YOUR-PROJECT\>
+```
+git clone <YOUR-PROJECT-URL> && cd <YOUR-PROJECT>
+```
 * 将Hugo站点文件复制到本地仓库 \<YOUR-PROJECT\>  
 * 删除public文件夹
-```bash
+```
 rm -rf public
 ```
 
 * 建立submodule，将本地public代码仓库关联到\<USERNAME\>.github.io
-```bash
-git submodule add -b master https://github.com/\<USERNAME\>/\<USERNAME\>.github.io.git public
+```
+git submodule add -b master https://github.com/<USERNAME>/<USERNAME>.github.io.git public
 ```
 
 
@@ -59,7 +61,16 @@ git submodule add -b master https://github.com/\<USERNAME\>/\<USERNAME\>.github.
 Code-server 的官方描述“Code-server is VS Code running on a remote server, accessible through the browser.”，它是一个运行在远端服务器上的VS Code，可以通过浏览器进行访问和操作。
 ![](https://github.com/cdr/code-server/raw/master/doc/assets/code-server.gif)
 
-未完待续
+code-server在Debian 10中的安装步骤：
+* 从code-server的github下载最新版程序
+* 解压到任意目录,我放到/usr/local/下面
+* 建立/usr/bin/code-server 到 /usr/local/code-server/code-server的软连接
+* 启动code-server，默认IP:Port是127.0.0.1:8080，我这里通过192.168.88.150:8080无法打开code-server，启动的时候需要指定IP为0.0.0.0
+
+```
+code-server --auth none --bind-addr 0.0.0.0:8080
+```
+
 
 
 <!--more-->
