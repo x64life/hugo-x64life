@@ -5,7 +5,7 @@ lastmod: 2020-05-05T22:48:56+08:00
 description: ""
 tags: ["关于"]
 categories: ["瞎扯"]
-author: "桀木"
+author: "J哥"
 
 # You can also close(false) or open(true) something for this content.
 # P.S. comment can only be closed
@@ -22,7 +22,7 @@ mathjax: false
 
 ## 我是谁？
 
-网名：桀木 | 职业：汽车工程师 | 业余爱好：IT技术  
+网名：J哥 | 职业：汽车工程师 | 业余爱好：IT技术  
 更多信息参见 [关于](http://x64.life/about/) 页面
 
 ## 为什么写？
@@ -33,10 +33,5 @@ mathjax: false
 ## 下面暂时没有了
 未完待续，哈哈哈
 
-```bash
-test
-test
-test
-```
 
 <!--more-->

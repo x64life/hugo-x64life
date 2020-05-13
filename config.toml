@@ -21,7 +21,7 @@ googleAnalytics = ""      # UA-XXXXXXXX-X
 copyright = ""            # default: author.name ↓        # 默认为下面配置的author.name ↓
 
 [author]                  # essential                     # 必需
-  name = "桀木"
+  name = "J哥"
 
 [sitemap]                 # essential                     # 必需
   changefreq = "weekly"
@@ -29,23 +29,23 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
   filename = "sitemap.xml"
 
 [[menu.main]]             # config your menu              # 配置目录
-  name = "Home"
+  name = "主页"
   weight = 10
   identifier = "home"
   url = "/"
 [[menu.main]]
-  name = "Archives"
+  name = "全部文章"
   weight = 20
   identifier = "archives"
   url = "/post/"
 [[menu.main]]
-  name = "Tags"
-  weight = 30
+  name = "标签"
+  weight = 40
   identifier = "tags"
   url = "/tags/"
 [[menu.main]]
-  name = "Categories"
-  weight = 40
+  name = "分类"
+  weight = 30
   identifier = "categories"
   url = "/categories/"
 
@@ -64,7 +64,7 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
   description = "桀木的笔记"
 
   # paginate of archives, tags and categories             # 归档、标签、分类每页显示的文章数目，建议修改为一个较大的值
-  archivePaginate = 5
+  archivePaginate = 20
 
   # show 'xx Posts In Total' in archive page ?            # 是否在归档页显示文章的总数
   showArchiveCount = false
@@ -80,7 +80,7 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
 
   # 一些全局开关，你也可以在每一篇内容的 front matter 中针对单篇内容关闭或开启某些功能，在 archetypes/default.md 查看更多信息。
   # Some global options, you can also close or open something in front matter for a single post, see more information from `archetypes/default.md`.
-  toc = true                                                                            # 是否开启目录
+  toc = false                                                                            # 是否开启目录
   autoCollapseToc = false   # Auto expand and collapse toc                              # 目录自动展开/折叠
   fancybox = true           # see https://github.com/fancyapps/fancybox                 # 是否启用fancybox（图片可点击）
 
@@ -100,7 +100,7 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
   livereUID = ""            # LiveRe UID                  # 来必力
 
   baiduPush = false        # baidu push                  # 百度
-  baiduAnalytics = '<script>var _hmt = _hmt || [];(function() {  var hm = document.createElement("script");  hm.src = "https://hm.baidu.com/hm.js?1562433a9828f76756c7614ab10bf2fe";  var s = document.getElementsByTagName("script")[0];   s.parentNode.insertBefore(hm, s);})();</script>'      # Baidu Analytics
+  baiduAnalytics = "1562433a9828f76756c7614ab10bf2fe"      # Baidu Analytics
   baiduVerification = ""   # Baidu Verification
   googleVerification = ""  # Google Verification         # 谷歌
 
@@ -137,8 +137,9 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
     clientSecret = ""       # Your client secret
 
   [params.utterances]       # https://utteranc.es/
+    enable = true
     owner = "x64life"              # Your GitHub ID
-    repo = "x64life/comments-for-pages"               # The repo to store comments
+    repo = "comments-for-pages"               # The repo to store comments
 
   [params.gitalk]           # Gitalk is a comment system based on GitHub issues. see https://github.com/gitalk/gitalk
     owner = ""              # Your GitHub ID

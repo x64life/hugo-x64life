@@ -6,7 +6,7 @@ keywords: []
 description: ""
 tags: ["hugo","github","vscode"]
 categories: ["IT技术"]
-author: "桀木"
+author: "J哥"
 
 # You can also close(false) or open(true) something for this content.
 # P.S. comment can only be closed
@@ -27,11 +27,12 @@ mathjax: false
 #### 1. Hugo安装  
 通过SSH或者Unraid里的VNC Remote登录Debian 10  
 下载并安装Go语言和最新版的Hugo：  
-
-    apt-get install golang
-    wget https://github.com/gohugoio/hugo/releases/download/v0.69.2/hugo_0.69.2_Linux-64bit.deb
-    dpkg -i hugo_0.69.2_Linux-64bit.deb
-    hugo version
+```bash
+apt-get install golang
+wget https://github.com/gohugoio/hugo/releases/download/v0.69.2/hugo_0.69.2_Linux-64bit.deb
+dpkg -i hugo_0.69.2_Linux-64bit.deb
+hugo version
+```
 
 如果正确返回版本信息，说明已经安装成功
 
@@ -41,19 +42,20 @@ mathjax: false
 官方教程：
 * 在Github中创建一个代码仓库\<YOUR-PROJECT\>用于存放Hugo的相关文件；
 * 在Github中创建\<USERNAME\>.github.io代码仓库，用于存放网页文件；
-```
+```bash
 git clone <YOUR-PROJECT-URL> && cd <YOUR-PROJECT>
 ```
 * 将Hugo站点文件复制到本地仓库 \<YOUR-PROJECT\>  
 * 删除public文件夹
-```
+```bash
 rm -rf public
 ```
 
 * 建立submodule，将本地public代码仓库关联到\<USERNAME\>.github.io
-```
+```bash
 git submodule add -b master https://github.com/<USERNAME>/<USERNAME>.github.io.git public
 ```
+<!--more-->
 
 
 #### 3. Code-server(vscode)作为Markdown编辑器  
@@ -67,10 +69,6 @@ code-server在Debian 10中的安装步骤：
 * 建立/usr/bin/code-server 到 /usr/local/code-server/code-server的软连接
 * 启动code-server，默认IP:Port是127.0.0.1:8080，我这里通过192.168.88.150:8080无法打开code-server，启动的时候需要指定IP为0.0.0.0
 
-```
+```bash
 code-server --auth none --bind-addr 0.0.0.0:8080
 ```
-
-
-
-<!--more-->
