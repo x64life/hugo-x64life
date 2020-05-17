@@ -2,7 +2,7 @@
 title: "LSDYNA K文件加密与解密技术"
 date: 2020-05-13T21:15:15+08:00
 lastmod: 2020-05-13T21:15:15+08:00
-draft: true
+#draft: true
 keywords: []
 description: "LS-DYNA k文件加密与解密"
 tags: ["ls-dyna", ""]
