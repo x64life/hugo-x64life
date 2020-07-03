@@ -1,4 +1,4 @@
-baseurl = "http://x64.life"
+baseurl = "https://x64.life"
 languageCode = "zh-cn"
 title = "X64·Life"
 # Enable comments by entering your Disqus shortname
@@ -14,7 +14,7 @@ theme = "hugo-icarus"
 
 
 [permalinks]
-    post = "/:year/:month/:day/:slug"
+    post = "/:filename"
 
 
 [params]
@@ -61,11 +61,6 @@ theme = "hugo-icarus"
     before = false
     label  = "文章分类"
     link   = "categories/"
-
-[[params.menu]]
-    before = false
-    label  = "关于我"
-    link   = "about/"
 
 
 # Enter a link for the follow button on the left
